@@ -1,0 +1,519 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ICONE -->
+    <link rel="icon" type="image/png" sizes="56x56" href="~/Content/images/icone2.png">
+    <title>Afrodite Jóias</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../Content/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/css/animate.css">
+
+    <link rel="stylesheet" href="../Content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Content/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Content/css/magnific-popup.css">
+    <link rel="stylesheet" href="../Content/css/aos.css">
+    <link rel="stylesheet" href="../Content/css/ionicons.min.css">
+    <link rel="stylesheet" href="../Content/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../Content/css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="../Content/css/flaticon.css">
+    <link rel="stylesheet" href="../Content/css/icomoon.css">
+    <link rel="stylesheet" href="../Content/css/style.css">
+</head>
+<body class="goto-here">
+    <!--CABEÇALHO-->
+    <div class="py-1 bg-black">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+                <div class="col-lg-12 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                            <span class="text">15 33639090</span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                            <span class="text">afroditejoias@gmail.com</span>
+                        </div>
+                        <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                            <span class="text">Avenida Paulista, 60 - São Paulo/SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="~/Content/images/nome1.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        @Html.ActionLink("Home", "Index", "Home",
+                               new { @class = "nav-link" })
+                        <!--<a href="index.html" class="nav-link">Home</a>-->
+                    </li>
+                    <li class="nav-item">
+                        <a>
+                            @Html.ActionLink("Catálogo", "Colares", "Home",
+                                                    new { @class = "nav-link" })
+                        </a>
+                    </li> 
+                    <li class="nav-item">
+                        @Html.ActionLink("Sobre Nós", "Sobre", "Home",
+                               new { @class = "nav-link" })
+                        <!--<a href="about.html" class="nav-link">Sobre Nós</a>-->
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Contato", "Contato", "Home",
+                           new { @class = "nav-link" })
+                        <!--<a href="contact.html" class="nav-link">Contato</a>-->
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM nav -->
+    <!--CARROSSEL-->
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item js-fullheight">
+                <div class="overlay"></div>
+                <div class="container-fluid p-0">
+                    <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                        <img class="one-third order-md-last img-fluid" src="~/Content/images/colar01.png" alt="">
+                        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <!--TEXTO COM FUNDO-->
+                                <span class="subheading">#NOVIDADE</span>
+                                <div class="horizontal">
+                                    <h1 class="mb-4 mt-3">Coleção de Jóias de Inverno 2020</h1>
+                                    <p class="mb-4">Conheça nossa nova coleção de jóias fabricadas com os melhores materiais!</p>
+
+                                    <p><a href="#inverno" class="btn-custom">Descobrir</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item js-fullheight">
+                <div class="overlay"></div>
+                <div class="container-fluid p-0">
+                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                        <img class="one-third order-md-last img-fluid" src="../Content/images/brincos01.png" alt="">
+                        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">#LUXO</span>
+                                <div class="horizontal">
+                                    <h1 class="mb-4 mt-3">Cristais Luxuosos Importados</h1>
+                                    <p class="mb-4">Confira nossas novas jóias com cristais! Você merece o brilho de uma Afrodite!</p>
+
+                                    <p><a href="#" class="btn-custom">Conferir</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row no-gutters ftco-services">
+                <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-4 py-md-5">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-bag"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Frete Grátis*</h3>
+                            <p>*Em compras acima de R$200, seu frete é totalmente gratuito, independente da localidade. Não é caro ser chique!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-4 py-md-5">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-customer-service"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Suporte ao Consumidor</h3>
+                            <p>Estamos disponíveis caso haja qualquer dúvida, crítica ou sugestão. Nossos clientes são ouvidos e assistidos!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services p-4 py-md-5">
+                        <div class="icon d-flex justify-content-center align-items-center mb-4">
+                            <span class="flaticon-payment-security"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Seguro</h3>
+                            <p>Ao comprar sua Afrodite, sua compra terá seguro. Caso haja danos ou erros de fabricação, nossa equipe corrigirá o problema!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section bg-light" id="inverno">
+        <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <img src="~/Content/images/colecao1.png" style="align-self:center" />
+                    <!--<h2 class="mb-4">Coleção de Jóias de Inverno 2020</h2>-->
+                    <p>Nossa nova coleção é inspirada na singularidade do inverno e em suas características luxuosas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product d-flex flex-column">
+                        <a href="#" class="img-prod">
+                            <img class="img-fluid" src="~/Content/images/brincos01.png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Luxo</span>
+                                </div>
+                                <!--
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>-->
+                            </div>
+                            <h3><a href="#">Brincos Neve</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$220.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Adicionar ao carrinho <i class="ion-ios-add ml-1"></i></span></a>
+                                <a href="#" class="buy-now text-center py-2">Comprar<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product d-flex flex-column">
+                        <a href="#" class="img-prod">
+                            <img class="img-fluid" src="~/Content/images/colar01 (4).png" alt="Colorlib Template">
+                            <span class="status">20% OFF</span>
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Luxo</span>
+                                </div>
+                                <!--
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>-->
+                            </div>
+                            <h3><a href="#">Colar Lua Cheia</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span class="mr-2 price-dc">$200.00</span><span class="price-sale">$160.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Adicionar ao carrinho <i class="ion-ios-add ml-1"></i></span></a>
+                                <a href="#" class="buy-now text-center py-2">Comprar<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod">
+                            <img class="img-fluid" src="~/Content/images/pulseira1 (3).png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Luxo</span>
+                                </div>
+                                <!--
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>-->
+                            </div>
+                            <h3><a href="#">Pulseira Pedraria</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$250.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Adicionar ao carrinho <i class="ion-ios-add ml-1"></i></span></a>
+                                <a href="#" class="buy-now text-center py-2">Comprar<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod">
+                            <img class="img-fluid" src="../Content/images/anel4.png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Luxo</span>
+                                </div>
+                                <!--
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>-->
+                            </div>
+                            <h3><a href="#">Anel Brilho Estelar</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$140.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Adicionar ao carrinho <i class="ion-ios-add ml-1"></i></span></a>
+                                <a href="#" class="buy-now text-center py-2">Comprar<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-choose ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4">
+                    <div class="choose-wrap divider-one img p-5 d-flex align-items-end" style="background-image: url(../Content/images/dia7.jpg);">
+                        <div class="text text-center text-white px-2">
+                            <span class="subheading">Dia das Mulheres</span>
+                            <h2>Delicadeza Feminina</h2>
+                            <p>Nossa joalheria tem o cuidado de preservar a sensibilidade e a força feminina.</p>
+                            <!--<p><a href="#" class="btn btn-black px-3 py-2">comprar</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row no-gutters choose-wrap divider-two align-items-stretch">
+                        <div class="col-md-12">
+                            <div class="choose-wrap full-wrap img align-self-stretch d-flex align-item-center justify-content-end" style="background-image: url(../Content/images/dia.jpg);">
+                                <div class="col-md-7 d-flex align-items-center">
+                                    <div class="text text-white px-5">
+                                        <span class="subheading">Estilo</span>
+                                        <h2>Dia a dia</h2>
+                                        <p>Nós também te preparamos para enfrentar a rotina com muita elegância e cores.</p>
+                                        <!--<p><a href="#" class="btn btn-black px-3 py-2">comprar</a></p>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+                                    <div class="choose-wrap wrap img align-self-stretch bg-light d-flex align-items-center">
+                                        <div class="text text-center px-5">
+                                            <span class="subheading">AFRODITE</span>
+                                            <h2>Conheça nossa história</h2>
+                                            <p>Como surgimos? Quando? Conheça um pouco da nossa história.</p>
+                                            <p>
+                                                <a>
+                                                    @Html.ActionLink("Conhecer", "Sobre", "Home",
+                                                      new { @class = "btn btn-black px-3 py-2" })
+
+                                                </a>
+                                            </p>
+                                            <!--<p><a href="~/Views/Home/Sobre.cshtml" class="btn btn-black px-3 py-2">Conhecer</a></p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="choose-wrap wrap img align-self-stretch d-flex align-items-center" style="background-image: url(../Content/images/dia3.jpg);">
+                                        <div class="text text-center text-white px-5">
+                                            <span class="subheading">Tecidos</span>
+                                            <h2>Luxo Descontraído</h2>
+                                            <p>Nossa joalheria possui uma eficiente equipe que trabalha com tecidos e os adapta as luxuosas jóias.</p>
+                                            <!--<p><a href="#" class="btn btn-black px-3 py-2">comprar</a></p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+    <br />
+    <section class="ftco-gallery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 heading-section text-center mb-4 ftco-animate">
+                    <h2 class="mb-4" style="background-color:white">Siga-nos no Instagram</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-lg-2 ftco-animate">
+                    <a href="../Content/images/dia4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(../Content/images/dia4.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2 ftco-animate">
+                    <a href="../Content/images/dia2.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(../Content/images/dia2.jpeg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2 ftco-animate">
+                    <a href="../Content/images/dia5.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(../Content/images/dia5.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2 ftco-animate">
+                    <a href="../Content/images/dia9.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(../Content/images/dia9.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2 ftco-animate">
+                    <a href="../Content/images/dia8.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(../Content/images/dia8.png);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2 ftco-animate">
+                    <a href="../Content/images/dia11.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(../Content/images/dia11.png);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--RODAPÉ-->
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="mouse">
+                    <a href="#" class="mouse-icon">
+                        <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Afrodite Jóias</h2>
+                        <p>Site acadêmico.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="https://twitter.com/login?lang=pt"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://pt-br.facebook.com/login/"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/?hl=pt"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Avenida Paulista, 60 - São Paulo/SP</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">15 33639090</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">afroditejoias@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Site Acadêmico <i class="icon-heart color-danger" aria-hidden="true"></i>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+    <script src="../Content/js/jquery.min.js"></script>
+    <script src="../Content/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../Content/js/popper.min.js"></script>
+    <script src="../Content/js/bootstrap.min.js"></script>
+    <script src="../Content/js/jquery.easing.1.3.js"></script>
+    <script src="../Content/js/jquery.waypoints.min.js"></script>
+    <script src="../Content/js/jquery.stellar.min.js"></script>
+    <script src="../Content/js/owl.carousel.min.js"></script>
+    <script src="../Content/js/jquery.magnific-popup.min.js"></script>
+    <script src="../Content/js/aos.js"></script>
+    <script src="../Content/js/jquery.animateNumber.min.js"></script>
+    <script src="../Content/js/bootstrap-datepicker.js"></script>
+    <script src="../Content/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="../Content/js/google-map.js"></script>
+    <script src="../Content/js/main.js"></script>
+
+</body>
+</html>
